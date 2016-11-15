@@ -16,6 +16,8 @@ class Nose2Spark(Plugin):
 
     @staticmethod
     def update_pythonpath(search_path):
+        search_path = os.path.abspath(search_path)
+
         # updating for nose2
         sys.path.insert(0, search_path)
 
@@ -25,7 +27,7 @@ class Nose2Spark(Plugin):
         os.environ['PYTHONPATH'] = pypath
 
     def createTests(self, event):
-        findspark.init(spark_home=self.spark_home)
+        findspark.init(spark_home=os.path.abspath(self.spark_home))
 
         for pyf in self.pyfiles:
             self.update_pythonpath(pyf)

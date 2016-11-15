@@ -11,9 +11,9 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='nose2-spark',
-    version='0.1',
+    version='0.2',
 
-    description='Nose2 plugin to run the tests with support of pyspark.',
+    description='nose2 plugin to run the tests with support of pyspark.',
     long_description=long_description,
     url='https://github.com/malexer/nose2-spark',
 

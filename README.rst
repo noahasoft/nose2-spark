@@ -1,12 +1,13 @@
 nose2-spark
 ===========
 
-Nose2 plugin to run the tests with support of pyspark (`Apache Spark`_).
+`nose2`_ plugin to run the tests with support of pyspark (`Apache Spark`_).
 
 Features:
 
 1. Make "pyspark" importable in you code executed by nose2.
-2. Add a list of `py-files`_ dependencies of your pyspark application.
+2. Add a list of `py-files`_ dependencies of your pyspark application (which
+   is usually supplied as an option ``spark-submit --py-files ...``).
 
 
 Install
@@ -67,5 +68,6 @@ This will allow to run tests by single command::
     $ nose2
 
 
+.. _nose2: http://nose2.readthedocs.io/
 .. _Apache Spark: https://spark.apache.org/
 .. _py-files: http://spark.apache.org/docs/latest/submitting-applications.html#bundling-your-applications-dependencies
