@@ -11,7 +11,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='nose2-spark',
-    version='0.2',
+    version='0.3',
 
     description='nose2 plugin to run the tests with support of pyspark.',
     long_description=long_description,
@@ -27,7 +27,6 @@ setup(
         'Intended Audience :: Developers',
         'Intended Audience :: Science/Research',
         'Topic :: Software Development :: Libraries :: Python Modules',
-        'Topic :: Scientific/Engineering :: Atmospheric Science',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
@@ -40,7 +39,7 @@ setup(
         'Topic :: Software Development :: Testing',
     ],
 
-    keywords=('nose2 spark pyspark'),
+    keywords=('nose2 spark pyspark unittest test'),
 
     packages=['nose2_spark'],
     install_requires=['nose2', 'findspark'],
